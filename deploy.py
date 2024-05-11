@@ -267,5 +267,5 @@ def set_background(png_file):
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # Set background image with the correct file path
-set_background(r"C:\Users\lenovo\AppData\Roaming\JetBrains\PyCharmCE2023.2\scratches\djv.png")
+set_background(r"djv.png")
 

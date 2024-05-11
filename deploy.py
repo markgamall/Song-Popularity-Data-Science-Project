@@ -5,7 +5,7 @@ import numpy as np
 import os
 
 import ast
-
+from category_encoders import TargetEncoder
 import pickle
 
 # Set the CSS styling

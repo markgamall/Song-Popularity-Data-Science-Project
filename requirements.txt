@@ -1,4 +1,4 @@
 streamlit
-pandas
-numpy
-pickle5
+pandas>=1.0
+numpy>=1.16
+pickle5>=0.0.11

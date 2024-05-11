@@ -2,11 +2,4 @@ streamlit
 pandas
 numpy
 os
-re
-ast
-scipy
-sklearn
-xgboost
-plotly.express
-category_encoders
 pickle

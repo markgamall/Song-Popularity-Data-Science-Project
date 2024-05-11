@@ -244,3 +244,28 @@ if st.button('Run Prediction'):
 
 
 
+import base64
+
+def get_base64_of_bin_file(bin_file):
+    with open(bin_file, 'rb') as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
+
+# Define function to set background image
+def set_background(png_file):
+    bin_str = get_base64_of_bin_file(png_file)
+    page_bg_img = f'''
+    <style>
+    [data-testid="stAppViewContainer"] {{
+        background-image: url("data:image/png;base64,{bin_str}");
+        background-size: cover;
+        color: white; /* Set text color to white */
+    }}
+    
+    </style>
+    '''
+    st.markdown(page_bg_img, unsafe_allow_html=True)
+
+# Set background image with the correct file path
+set_background(r"C:\Users\lenovo\AppData\Roaming\JetBrains\PyCharmCE2023.2\scratches\djv.png")
+

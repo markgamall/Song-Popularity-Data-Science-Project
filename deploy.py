@@ -87,7 +87,7 @@ current_directory = os.path.dirname(os.path.abspath(__file__))
 pickle_file_path = os.path.join(current_directory, "target_encoder.pkl")
 
 try:
-    with open(pickle_file_path, 'rb') as f:
+    with open("target_encoder.pkl", 'rb') as f:
         encoder = pickle.load(f)
 except Exception as e:
     st.error(f"Error loading target encoder: {e}")

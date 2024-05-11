@@ -1,0 +1,14 @@
+streamlit
+pandas
+numpy
+matplotlib.pyplot
+seaborn
+os
+re
+ast
+scipy
+sklearn
+xgboost
+plotly.express
+category_encoders
+import pickle
